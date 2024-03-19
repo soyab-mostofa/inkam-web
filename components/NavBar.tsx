@@ -9,14 +9,11 @@ import { Button } from "./ui/button";
 import { usePathname, useRouter } from "next/navigation";
 
 const NavBar = () => {
-  const pathname = usePathname();
-
-  console.log(pathname);
   return (
     <div className="flex py-4 fixed top-0  left-0  w-full justify-between items-center px-6 mx-auto z-50 bg-gray-50/40 backdrop-blur-md">
       <Link href="/">
         <Image
-          src="/inkam-logo-s.png"
+          src="/logo-small.png"
           alt="logo"
           width={50}
           height={50}
