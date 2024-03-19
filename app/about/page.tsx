@@ -40,14 +40,16 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="space-y-8 max-w-7xl mx-auto">
-        {aboutContent.map((item) => (
-          <p className="text-sm">{item}</p>
-        ))}
-      </div>
-      <div className="mt-8 w-full max-w-7xl mx-auto">
-        <CarouselEl className="sm:hidden" />
-        <PhotoGrid />
+      <div className="flex flex-col sm:flex-row gap-4">
+        <div className="space-y-8 max-w-7xl mx-auto md:basis-2/5">
+          {aboutContent.map((item) => (
+            <p className="text-sm">{item}</p>
+          ))}
+        </div>
+        <div className="mt-8 md:mt-0 w-full max-w-7xl mx-auto md:basis-3/5">
+          <CarouselEl className="sm:hidden" />
+          <PhotoGrid />
+        </div>
       </div>
     </div>
   );
